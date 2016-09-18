@@ -1,0 +1,294 @@
+html{
+	background-color:#f2f2f2 ;
+	color:black;
+	font-family: 'Exo', sans-serif;
+	font-size:12px;
+}
+body{
+	background-color:#f2f2f2 ;
+	color:black;
+	font-family: 'Exo', sans-serif;
+	font-size:12px;
+}
+table{
+	border-color: #212b31;
+}
+
+#title {
+	position: relative;
+	left: 25px;
+	top: -40px;
+}
+.btn{
+	font-size:inherit;
+}
+.col-heading{
+	color:black;
+	font-weight:bold !important;
+}
+.page {
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.padded-top{
+	padding-top:25px;
+}
+.patient-list {
+	padding-bottom:50px;
+	position: relative;
+	top: 10px;
+
+}
+.instance-list{
+	display: none;
+}
+.session-info{
+	display: none;
+}
+.patient-info{
+	margin-top:30px;
+}
+.row-hover:hover{
+	background:#f2f2f2;
+}
+.row-heading{
+	color:#fff;
+	background-color:rgb(55,55,55);
+}
+.navbar{
+	background-color:rgb(50,50,50);
+	padding-bottom:70px;
+	padding-top:10px;
+}
+
+.navbar-brand{
+	color:#E21C21!important;
+	font-size:50px;
+}
+.navbar-default{
+	margin-bottom:0px !important;
+}
+.margin-top{
+	margin-top:20px;
+}
+.main-container{
+	background: #ffffff;;
+	padding:50px;
+	margin-left:150px;
+	margin-right:150px;
+	margin-bottom:50px;
+	padding-bottom:150px;
+}
+
+.main-header{
+	border-bottom: 5px solid #E21C21 !important;
+	margin-bottom:50px;
+	font-size:30px;
+	color:#E21C21;
+}
+
+.instance-table {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 20px;
+	max-height: 200px;
+	overflow: scroll;
+	border: 1px #ff3333 !important;
+}
+.small-heading{
+	color:#ff3333;
+	font-weight:bold;
+	font-size:15px;
+	padding-right:50px;
+	margin-bottom:20px;
+}
+.text-warning{
+	color:#E59122;
+}
+.logo{
+	text-align:center;
+	background-color:rgb(55,55,55);
+	color:#ff3333;
+	font-size:50px;
+
+}
+
+.logout{
+	color:#fff;
+	float:right;
+	font-size:20px;
+	padding-right:30px;
+	margin-top:60px;
+}
+.session-card{
+	margin-left:80px;
+	margin-right:80px;
+	margin-top:50px;
+	margin-bottom:30px;
+	background-color:rgb(55,55,55);
+	padding:40px;
+	padding-bottom:100px;
+	color:#fff;
+	box-shadow: 1px 1px 1px rgb(130,130,130);
+}
+.submit-button{
+	margin-top:30px;
+	font-size:20px !important;
+}
+.sub-header{
+	border-bottom: 3px solid #ff3333 !important;
+	margin-bottom:50px;
+	font-size:15px;
+	color:#E21C21;
+	padding-top:30px;
+}
+.logout:hover{
+	color:#fff !important;
+	opacity:0.8;
+	text-decoration:none;
+}
+th, td {
+	padding: 10px;
+	border: 1px solid black;
+
+}
+
+.session-info {
+	position: relative;
+	top: 60px;
+	margin-bottom: 20px;
+
+}
+.session-heading{
+	font-weight:bold;
+	font-size:18px;
+	margin-bottom:30px;
+}
+.session-small-heading{
+	color:#FF3333;
+}
+
+#instance-hr {
+
+	border-color: black;
+
+}
+
+#title {
+	position: relative;
+	left: 25px;
+	top: 40px;
+
+}
+#sign-up {
+
+	position: relative;
+	top: -410px;
+	left: 1075px;
+
+}
+.login{
+	margin-top:100px;
+	box-shadow: 1px 1px 1px rgb(130,130,130);
+}
+.login-title {
+	font-size:25px;
+}
+.login-content{
+	padding:50px;
+	background-color:#fff;
+}
+.input-group {
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#password-input {
+
+	position: relative;
+	top: 10px;
+
+}
+
+#login-enter {
+	position: relative;
+	top: 20px;
+	left: 255px;
+
+}
+
+
+#title {
+
+	position: relative;
+	left: 25px;
+	top: -40px;
+
+}
+
+.page {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logout {
+	position: absolute;
+	right: 0px;
+}
+
+.input-group {
+	width: 500px;
+
+}
+
+#age-input {
+
+	position: relative;
+	top: 10px;
+
+}
+
+#gender-input {
+
+	position: relative;
+	top: 20px;
+
+}
+
+#hn-input {
+
+	position: relative;
+	top: 30px;
+
+}
+
+.gender-input-buttons {
+
+	position: relative;
+	left: 10px;
+
+}
+
+.vitals {
+
+	position: relative;
+	top: 40px;
+
+}
+
+#heart-rate-input {
+
+	position: relative;
+	top: 10px;
+
+}
+
+#temperature-input {
+
+	position: relative;
+	top: 20px;
+
+}

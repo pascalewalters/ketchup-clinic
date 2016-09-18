@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ketchup Clinic</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="icon" type="img/ico" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo|Francois+One" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<nav class="navbar navbar-default">
+	<a class="navbar-brand" href="#">
+		<img src="../logo2.png">
+	</a>
+	<a href="../Main Page/index.html" class="logout">
+		<p>Logout       <i class="fa fa-sign-out" aria-hidden="true"></i></p>
+	</a>
+</nav>
+<body>
+
+<div class="page">
+	<div class="main-container">
+		<div class="main-header">Physician's Dashboard</div>
+		<div class="patient-list">
+			<span class="small-heading">Select Patient:</span>
+			<select id="patient-dropdown" class="dropdown-content">
+				<option selected disabled></option>
+			</select>
+		</div>
+		<div class="instance-list">
+			<span class="small-heading">Select Session:</span>
+			<table class="instance-table" id="instance-table">
+				<tr>
+					<th style="width: 200px;" class="col-heading row-heading">Dates</th>
+					<th style="width: 500px;" class="col-heading row-heading">Description</th>
+					<th style="width: 100px;" class="col-heading row-heading">Status</th>
+				</tr>
+				<tr class="row-hover">
+					<td>September 17, 2016</td>
+					<td>Severe stomach pain and fever.</td>
+					<td class="text-primary"><i class="fa fa-file" aria-hidden="true"></i> New</td>
+				</tr>
+				<tr class="row-hover">
+					<td>September 16, 2016</td>
+					<td>Urinary tract infection, antibiotics no longer effective. </td>
+					<td class="text-primary"><i class="fa fa-file" aria-hidden="true"></i> New</td>
+				</tr>
+				<tr class="row-hover">
+					<td>September 14, 2016</td>
+					<td>Motorcycle accident, broken arm and sore upper body.</td>
+					<td class="text-warning"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Needs Response</td>
+				</tr>
+				<tr class="row-hover">
+					<td>June 07, 2016</td>
+					<td>Chronic headaches in mornings.</td>
+					<td class="text-success"><i class="fa fa-check-circle" aria-hidden="true"></i> Responded</td>
+				</tr>
+				<tr class="row-hover">
+					<td>May 5, 2016</td>
+					<td>Frequent diarrhea, loss of appetite.</td>
+					<td class="text-success"><i class="fa fa-check-circle text-success" aria-hidden="true"></i> Responded</td>
+				</tr>
+			</table>
+		</div>
+		<div class="session-info">
+			<div class="sub-header">
+				Session Information
+			</div>
+			<div class="session-card">
+				<div>
+					<div class="row">
+						<span class="small-heading col-md-3">
+							Date:
+						</span>
+						<span class="col-md-9">September 17</span>
+					</div>
+					<div class="row">
+						<span class="small-heading col-md-3">
+							Status:
+						</span>
+						<span class="col-md-9">New</span>
+					</div>
+					<hr id="instance-hr">
+				</div>
+				<div class="patient-info">
+					<div class="session-heading row">
+						Patient Information
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Name:
+						</span>
+						<span class="col-md-9" id="patient-name">Bob Smith</span>
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Age:
+						</span>
+						<span class="col-md-9" id="patient-age">10</span>
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Gender:
+						</span>
+						<span class="col-md-9" id="patient-gender">35</span>
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Health Care Number:
+						</span>
+						<span class="col-md-9" id="patient-id">29387461</span>
+					</div>
+					<hr id="instance-hr">
+				</div>
+				<div class="patient-info">
+					<div class="session-heading row">
+						Vitals Record & Medical Concern
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Heart Rate:
+						</span>
+						<span class="col-md-9" id="patient-hr">100</span>
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Blood Pressure:
+						</span>
+						<span class="col-md-9" id="patient-bp">80</span>
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Temperature:
+						</span>
+						<span class="col-md-9" id="patient-temp">35 °C</span>
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Medical Concern:
+						</span>
+						<span class="col-md-9">Severe stomach pain and fever. </span>
+					</div>
+					<hr id="instance-hr">
+				</div>
+				<div class="patient-info">
+					<div class="session-heading row">
+						Response
+					</div>
+					<div class="input-group row">
+						<textarea class="form-control" id="doctor-response" rows="10"></textarea>
+					</div>
+					<div class="submit-button pull-right row">
+						<button class="btn btn-danger btn-md" id="submit-button">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

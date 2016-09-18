@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ketchup Clinic</title>
+	<link rel="icon" type="img/ico" href="favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Exo|Francois+One" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<nav class="navbar navbar-default">
+	<a class="navbar-brand" href="#">
+		<img src="../logo2.png">
+	</a>
+	<div>
+		<a href="../Main Page/index.html" class="logout">
+			<p>Logout       <i class="fa fa-sign-out" aria-hidden="true"></i></p>
+		</a>
+	</div>
+</nav>
+<body>
+<div class="page">
+	<div class="main-container">
+		<div class="main-header">Medical Checkup</div>
+		<div class="patient-list">
+			<div class="session-heading">Personal Information:</div>
+			<div class="input-group" id="name-input">
+				<span class="input-group-addon" id="name-addon">Name</span>
+				<input type="text" class="form-control" aria-describedby="name-addon">
+			</div>
+			<div class="input-group" id="age-input">
+				<span class="input-group-addon" id="age-addon">Age</span>
+				<input type="text" class="form-control" aria-describedby="age-addon">
+			</div>
+			<div class="input-group" id="gender-input">
+				<span class="input-group-addon" id="gender-addon">Gender</span>
+				<div class="gender-input-buttons">
+					<input type='radio' name="gender" value="Male" checked="checked"> Male
+					<input type='radio' name="gender" value="Female"> Female
+				</div>
+			</div>
+			<div class="input-group" id="hn-input">
+				<span class="input-group-addon" id="hn-addon">Healthcare Number</span>
+				<input type="text" class="form-control" aria-describedby="hn-addon">
+			</div>
+		</div>
+		<div class="patient-list">
+			<div class="session-heading">Vitals Record</div>
+			<div class="input-group blood-pressure" id="blood-pressure-input">
+				<span class="input-group-addon" id="blood-pressure-addon1">Blood Pressure</span>
+				<input type="text" class="form-control blood-pressure-text-input" aria-describedby="blood-pressure-addon">
+				<span class="input-group-addon" id="blood-pressure-addon2">mmHg</span>
+			</div>
+			<div class="input-group heart-rate" id="heart-rate-input">
+				<span class="input-group-addon" id="heart-rate-addon1">Heart Rate</span>
+				<input type="text" class="form-control" aria-describedby="heart-rate-addon">
+				<span class="input-group-addon" id="heart-rate-addon2">bpm</span>
+			</div>
+			<div class="input-group temp" id="temperature-input">
+				<span class="input-group-addon" id="temperature-addon1">Temperature</span>
+				<input type="text" class="form-control" aria-describedby="temperature-addon">
+				<span class="input-group-addon" id="temperature-addon2">&deg;C</span>
+			</div>
+		</div>
+		<div class="patient-list">
+			<div class="session-heading">Medical Concerns</div>
+			<div class="input-group">
+				<textarea class="form-control" rows="10" id="patient-notes-input"></textarea>
+			</div>
+		</div>
+		<div class="submit-button pull-right">
+			<button class="btn btn-danger btn-md" id="submit-button">Submit</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>

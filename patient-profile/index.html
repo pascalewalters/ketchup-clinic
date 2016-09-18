@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ketchup Clinic</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="icon" type="img/ico" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo|Francois+One" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<nav class="navbar navbar-default">
+	<a class="navbar-brand" href="#">
+		<img src="../logo2.png">
+	</a>
+	<a href="../Main Page/index.html" class="logout">
+		<p>Logout       <i class="fa fa-sign-out" aria-hidden="true"></i></p>
+	</a>
+</nav>
+<body>
+
+<div class="page">
+	<div class="main-container">
+		<div class="main-header">Patient Profile</div>
+		<div class="instance-list">
+			<span class="small-heading">Select Session:</span>
+			<table class="instance-table" id="instance-table">
+				<tr>
+					<th style="width: 200px;" class="col-heading row-heading">Dates</th>
+					<th style="width: 500px;" class="col-heading row-heading">Description</th>
+					<th style="width: 100px;" class="col-heading row-heading">Status</th>
+				</tr>
+				<tr class="row-hover">
+					<td>September 17, 2016</td>
+					<td>Nausea, heartburn, indigestion, upset stomach, diarrhea.</td>
+					<td class="text-primary"><i class="fa fa-file" aria-hidden="true"></i> New</td>
+				</tr>
+				<tr class="row-hover">
+					<td>September 15, 2016</td>
+					<td>Rash at armpits and upper chest.</td>
+					<td class="text-warning"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Needs Response</td>
+				</tr>
+				<tr class="row-hover">
+					<td>August 21, 2016</td>
+					<td>Excessive abdominal pain, headaches.</td>
+					<td class="text-success"><i class="fa fa-check-circle text-success" aria-hidden="true"></i> Responded</td>
+				</tr>
+			</table>
+		</div>
+		<div class="session-info">
+			<div class="sub-header">
+				Session Information
+			</div>
+			<div class="session-card">
+				<div>
+					<div class="row">
+						<span class="small-heading col-md-3">
+							Date:
+						</span>
+						<span class="col-md-9">August 21, 2016</span>
+					</div>
+					<div class="row">
+						<span class="small-heading col-md-3">
+							Status:
+						</span>
+						<span class="col-md-9">Responded</span>
+					</div>
+					<hr id="instance-hr">
+				</div>
+				<div class="patient-info">
+					<div class="session-heading row">
+						Patient Information
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Name:
+						</span>
+						<span class="col-md-9" id="patient-name">Alisha Castillo</span>
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Age:
+						</span>
+						<span class="col-md-9" id="patient-age">12</span>
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Gender:
+						</span>
+						<span class="col-md-9" id="patient-gender">Female</span>
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Health Care Number:
+						</span>
+						<span class="col-md-9" id="patient-id">29387461</span>
+					</div>
+					<hr id="instance-hr">
+				</div>
+				<div class="patient-info">
+					<div class="session-heading row">
+						Vitals Record & Medical Concern
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Heart Rate:
+						</span>
+						<span class="col-md-9" id="patient-hr">101 BPM</span>
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Blood Pressure:
+						</span>
+						<span class="col-md-9" id="patient-bp">128/83 mmHg</span>
+					</div>
+					<div class="row">
+						<span class="session-small-heading col-md-3">
+							Temperature:
+						</span>
+						<span class="col-md-9" id="patient-temp">36 °C</span>
+					</div>
+					<div class="row">
+						<span class="small-heading col-md-3">
+							Medical Concern:
+						</span>
+						<span class="col-md-9" id="patient-notes">Excessive abdominal pain, headaches.</span>
+					</div>
+					<hr id="instance-hr">
+				</div>
+				<div class="patient-info">
+					<div class="session-heading row">
+						Response
+					</div>
+					<div class="row">
+						<span id="patient-notes-response">Drink lots of water and rest plentifully. If conditions get worse in a few weeks, return to the clinic.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
